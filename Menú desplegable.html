@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<title>Menu Desplegable</title>
+		<style type="text/css">  /*Tipo de menú HTML-CSS*/
+			
+			#header {
+				margin:center; /*indica la posicion del menú*/
+				width:250px;
+  				font-family:Arial, Helvetica, sans-serif;
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav {
+				width:1100px; /*Le establecemos un ancho*/
+				margin:0 auto; /*Centramos automaticamente*/
+			}
+ 
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:222222; /*color del menú*/
+				color:#fff;
+				text-decoration:none;
+				padding:20px 120px; /*Medidas del borde*/
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute; /*Fijar al momento de posicionarnos sobre el menú*/
+				min-width:30px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right: -320px; /*Ancho al posicionarnos sobre el menú*/
+				top:0px;
+			}
+			
+		</style>
+	</head>
+	        <body bgcolor="3C3C3C">
+		<div id="header">
+			<nav> <!-- Aqui estamos iniciando la nueva etiqueta nav -->
+				<ul class="nav">
+					<li><a href="">Inicio</a>
+						<ul>
+						<li><a href="file:///C:/Proyecto/M%C3%A9xico%20y%20Latam/Conocenos.html" target="_blank">Conocenos</a>
+						</ul>
+					</li>
+					<li><a href=""> México y América latina</a>
+						<ul>
+						<li><a href="file:///C:/Proyecto/M%C3%A9xico%20y%20Latam/%C3%89poca%20Prehispanica.html" target="_blank">Época Prehispánica</a>
+							<ul>
+							<li><a href="file:///C:/Proyecto/M%C3%A9xico%20y%20Latam/%C3%89poca%20Precl%C3%A1sico.html" target="_blank">Preclásico</a>
+							<li><a href="file:///C:/Proyecto/M%C3%A9xico%20y%20Latam/%C3%89poca%20Cl%C3%A1sico.html" target="_blank">Clásico</a>
+							<li><a href="file:///C:/Proyecto/M%C3%A9xico%20y%20Latam/%C3%89poca%20Poscl%C3%A1sico.html" target="_blank">Posclásico</a>
+							</ul>
+						<li><a href="file:///C:/Proyecto/M%C3%A9xico%20y%20Latam/%C3%89poca%20Colonial.html" target="_blank">Época Colonial</a>
+						<li><a href="file:///C:/Proyecto/M%C3%A9xico%20y%20Latam/Siglo%20XIX.html">Siglo XIX</a>
+						</ul>
+					</li>
+					<li><a href="">Contacto</a>
+						<ul>
+						<li><a href="https://www.instagram.com/joshua.hernandez22/" target="_blank">@Joshua.hernandez22</a>
+						<li><a href="https://www.instagram.com/noe_eze_che/" target="_blank">@Noe_eze_che</a>
+						<li><a href="" target="_blank">@Tony</a>
+						<li><a href="https://www.instagram.com/cabra_colonia/" target="_blank">@Cabra_colonial</a>
+						</ul>
+
+				</ul>
+			</nav><!-- Aqui estamos cerrando la nueva etiqueta nav -->
+		</div>
+	</body>
+</html>
